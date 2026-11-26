@@ -31,11 +31,11 @@ jobs:
         working-directory: dashboard
     steps:
       - name: Check out
-        uses: actions/checkout@v4.2.2
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
 
       # no .nvmrc or engines field: Node 22 LTS (Vite 8 needs 20.19 or 22.12 and later)
       - name: Set up Node
-        uses: actions/setup-node@v4.1.0
+        uses: actions/setup-node@39370e3970a6d050c480ffad4ff0ed4d3fdee5af # v4.1.0
         with:
           node-version: "22"
           cache: npm
